@@ -12,28 +12,8 @@ let snakeArr = [
 let food = { x: 6, y: 7 }
 let flag = 0
 let lastKeyDown = null
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let bRows = 25
+let bColumns = 25
 
 
 // Game functions
@@ -59,7 +39,7 @@ function isCollide(snake) {
     }
 
     // if snakes bump into the wall
-    if (snake[0].x >= 50 || snake[0].x <= 0 || snake[0].y >= 50 || snake[0].y <= 0) {
+    if (snake[0].x >= bColumns || snake[0].x <= 0 || snake[0].y >= bRows || snake[0].y <= 0) {
         return true
     }
 
@@ -119,9 +99,11 @@ function gameEngine() {
         scoreBox.innerHTML = "Score: " + score
         snakeArr.unshift({ x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y })
         let a = 2
-        let b = 48
+        let b = bColumns - 2
+        let c = 2
+        let d = bRows - 2
 
-        food = { x: Math.round(a + (b - a) * Math.random()), y: Math.round(a + (b - a) * Math.random()) }
+        food = { x: Math.round(a + (b - a) * Math.random()), y: Math.round(c + (d - c) * Math.random()) }
     }
 
     // Moving the snake
