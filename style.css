@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+#board {
+    background-color: #334658;
+    height: 100vmin;
+    width: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(50, 1fr);
+    grid-template-columns: repeat(50, 1fr);
+}
+
+#scoreBox {
+    position: absolute;
+    color: #6d8ead;
+    top: 12px;
+    right: 24px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#name{
+    position: absolute;
+    color: #6d8eada4;
+    bottom: 15px;
+    left: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#highestScoreBox {
+    position: absolute;
+    color: #708293;
+    top: 65px;
+    right: 30px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.head {
+    background-color: rgb(255, 105, 105);
+    border: 2px solid white;
+    border-radius: 3px;
+}
+
+.snake {
+    background-color: rgb(156, 255, 156);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.food {
+    background-color: rgb(255, 255, 88);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.btnBox {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    /* border: 1px solid black; */
+
+
+}
+
+.btn{
+    background-color: #334658;
+    border: none;
+
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.btn:active{
+    background-color: #6d8ead;
+}
+
+#btnU{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#btnD{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#btnR{
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#btnL{
+    grid-row: 2;
+    grid-column: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+      /* background-color: red; */
+      align-items: flex-start;
+    }
+
+    #scoreBox {
+        position: absolute;
+        color: #6d8ead;
+        top: 500px;
+        left: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'Lato', sans-serif;
+    
+    }
+    
+    #highestScoreBox {
+        position: absolute;
+        color: #708293;
+        top: 536px;
+        left: 20px;
+        font-family: 'Lato', sans-serif;
+    
+    }
+  }
+
+
