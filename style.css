@@ -78,8 +78,8 @@ body{
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
-    bottom: 25px;
-    right: 25px;
+    bottom: 140px;
+    right: 30px;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Lato', sans-serif;
@@ -135,7 +135,7 @@ body{
     #scoreBox {
         position: absolute;
         color: #6d8ead;
-        top: 500px;
+        top: 550px;
         left: 20px;
         font-size: 30px;
         font-weight: bold;
@@ -146,7 +146,7 @@ body{
     #highestScoreBox {
         position: absolute;
         color: #708293;
-        top: 536px;
+        top: 586px;
         left: 20px;
         font-family: 'Lato', sans-serif;
     
