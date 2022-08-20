@@ -12,8 +12,8 @@ let snakeArr = [
 let food = { x: 6, y: 7 }
 let flag = 0
 let lastKeyDown = null
-let bRows = 20
-let bColumns = 20
+let bRows = 25
+let bColumns = 25
 
 
 // Game functions
