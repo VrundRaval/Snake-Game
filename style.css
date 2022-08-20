@@ -74,18 +74,16 @@ body{
 }
 
 .btnBox {
-    /* visibility: hidden; */
-    /* display: grid;
+    display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     position: absolute;
-    bottom: 140px;
+    bottom: 50px;
     right: 30px;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
     /* border: 1px solid black; */
-    display: none;
 
 
 }
@@ -142,21 +140,6 @@ body{
         top: 45px;
         right: 24px;
 
-    
-    }
-
-    .btnBox {
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        position: absolute;
-        bottom: 100px;
-        right: 30px;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: 'Lato', sans-serif;
-        /* border: 1px solid black; */
-    
     
     }
 
