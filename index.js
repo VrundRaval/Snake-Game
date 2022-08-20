@@ -5,15 +5,15 @@ const gameOverSound = new Audio('gameover.mp3')
 const moveSound = new Audio('move.mp3')
 let score = 0
 let lastPaintTime = 0
-let speed = 10
+let speed = 5
 let snakeArr = [
     { x: 13, y: 15 }
 ]
 let food = { x: 6, y: 7 }
 let flag = 0
 let lastKeyDown = null
-let bRows = 25
-let bColumns = 25
+let bRows = 20
+let bColumns = 20
 
 
 // Game functions
@@ -57,7 +57,7 @@ function gameEngine() {
         food = { x: 6, y: 7 }
         score = 0
         scoreBox.innerHTML = "Score: 0"
-        speed = 10
+        speed = 5
         flag = 0
 
     }
